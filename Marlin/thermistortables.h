@@ -1145,4 +1145,50 @@ const short temptable_1047[][2] PROGMEM = {
 # endif
 #endif
 
+#if (THERMISTORHEATER_0 == 99) // yogi custom
+const short temptable_99[][2] PROGMEM = {
+
+{       578*OVERSAMPLENR        ,      260      }, // -17
+{       595*OVERSAMPLENR        ,      250      }, // -20
+{       615*OVERSAMPLENR        ,      245      }, // -8
+{       623*OVERSAMPLENR        ,      240      }, // -20
+
+{       643*OVERSAMPLENR        ,      235      }, // -6
+{       649*OVERSAMPLENR        ,      230      }, // -20
+{       669*OVERSAMPLENR        ,      225      }, // -28
+{       697*OVERSAMPLENR        ,      215      }, // -33
+{       730*OVERSAMPLENR        ,      210      }, // -11
+{       749*OVERSAMPLENR        ,      200      }, // -16
+{       765*OVERSAMPLENR        ,      195      }, // -10
+{       775*OVERSAMPLENR        ,      190      }, // -10
+{       785*OVERSAMPLENR        ,      180      }, // -15
+{       800*OVERSAMPLENR        ,      170      }, // -20
+{       820*OVERSAMPLENR        ,      165      }, // -11
+{       831*OVERSAMPLENR        ,      160      }, // -5
+{       836*OVERSAMPLENR        ,      155      }, // -8
+{       844*OVERSAMPLENR        ,      150      }, // -11
+{       855*OVERSAMPLENR        ,      145      }, // -22
+{       877*OVERSAMPLENR        ,      140      }, // -3
+{       880*OVERSAMPLENR        ,      130      }, // -6
+{       886*OVERSAMPLENR        ,      125      }, // -4
+
+{       900*OVERSAMPLENR        ,      120      }, // -11
+{       911*OVERSAMPLENR        ,      110      }, // -6
+{       917*OVERSAMPLENR        ,      100      }, // -5
+{       922*OVERSAMPLENR        ,       90      }, // -8
+{       940*OVERSAMPLENR        ,       80      }, // -8
+{       948*OVERSAMPLENR        ,       70      },
+{       950*OVERSAMPLENR        ,       62      }, // todo
+{       932*OVERSAMPLENR        ,       59      }, // todo
+{       942*OVERSAMPLENR        ,       57      }, // todo
+{       973*OVERSAMPLENR        ,       29      }, // base reading
+
+{       985*OVERSAMPLENR        ,       20      }, // x
+{       993*OVERSAMPLENR        ,       15      }, // x
+{       999*OVERSAMPLENR        ,       10      }, // x
+{       1004*OVERSAMPLENR       ,       5       }, // x
+{       1008*OVERSAMPLENR       ,       0       } //safety
+};
+#endif
+
 #endif //THERMISTORTABLES_H_
